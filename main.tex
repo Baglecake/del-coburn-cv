@@ -1,26 +1,41 @@
-\documentclass{academic-cv}
+%!TEX encoding = UTF-8 Unicode
+\documentclass[9pt, a4paper]{academic-cv}
+
+% Page margins
+\geometry{left=0.5in, top=0.5in, right=0.5in, bottom=0.5in, footskip=.2cm}
+
+% Font (use XeLaTeX or LuaLaTeX)
+\setmainfont{Arial}
+
+% Personal info
+\name{Delbert (Del) Coburn}{}
+\homepage{https://github.com/Baglecake} % or personal site if you prefer
+\email{dcobu610@mtroyal.ca} % swap to UofT email once active
+\github{Baglecake}
+\mobile{+1 (403) 619-7334}
+\address{} % optional, you can leave blank
+
+\usepackage{multicol}
 
 \begin{document}
 
-% Header with name and contact information
-\begin{center}
-    {\Huge\bfseries Del Coburn}\\[0.5em]
-    \href{mailto:email@example.com}{email@example.com} $|$ 
-    \href{https://www.example.com}{www.example.com} $|$ 
-    (555) 123-4567
-\end{center}
+% Header + Footer
+\makecvheader
+\makecvfooter
+  {\textbf{Technical \& Research Skills:} Python · Multi-agent simulation design · Prompt/agent design · Qualitative research · Qualitative analysis · Quantitative methods · LaTeX · Git/GitHub · Canva/Beamer · Facilitation}
+  {} % center footer empty
+  {} % right footer empty
 
-\vspace{1em}
-
-% Include CV sections
+% Sections
 \input{cv/professional_summary}
 \input{cv/education}
+\input{cv/awards}
 \input{cv/research_experience}
 \input{cv/publications}
-\input{cv/awards}
+\input{cv/academic_engagements}
 \input{cv/fellowships}
 \input{cv/teaching}
-\input{cv/academic_engagements}
+\input{cv/experience_development}
 \input{cv/references}
 
 \end{document}
