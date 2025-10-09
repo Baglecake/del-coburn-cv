@@ -1,32 +1,24 @@
-%!TEX encoding = UTF-8 Unicode
 \documentclass[9pt, a4paper]{academic-cv}
 
-% Page margins
-\geometry{left=0.5in, top=0.5in, right=0.5in, bottom=0.5in, footskip=.2cm}
+% (No need for fontspec now; pdfLaTeX is fine)
 
-% Font (use XeLaTeX or LuaLaTeX)
-\setmainfont{Arial}
-
-% Personal info
-\name{Delbert (Del) Coburn}{}
-\homepage{https://github.com/Baglecake} % or personal site if you prefer
-\email{dcobu610@mtroyal.ca} % swap to UofT email once active
-\github{Baglecake}
-\mobile{+1 (403) 619-7334}
-\address{} % optional, you can leave blank
-
+% Optional extra packages for your content
 \usepackage{multicol}
+\usepackage{hyperref}
+
+\name{Delbert (Del) Coburn}{}
+\email{dcobu610@mtroyal.ca}
+\mobile{+1 (403) 619-7334}
+\github{Baglecake}
+% \homepage{https://github.com/Baglecake}
+% \address{Toronto, ON}
 
 \begin{document}
 
-% Header + Footer
 \makecvheader
-\makecvfooter
-  {\textbf{Technical \& Research Skills:} Python · Multi-agent simulation design · Prompt/agent design · Qualitative research · Qualitative analysis · Quantitative methods · LaTeX · Git/GitHub · Canva/Beamer · Facilitation}
-  {} % center footer empty
-  {} % right footer empty
 
-% Sections
+\makecvfooter{\textbf{Technical \& Research Skills:} Multi-agent simulation (Chatstorm) · Prompt/agent design · Qualitative analysis · LaTeX · Git/GitHub}{ }{ }
+
 \input{cv/professional_summary}
 \input{cv/education}
 \input{cv/awards}
