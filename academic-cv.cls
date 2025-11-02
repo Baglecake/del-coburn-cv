@@ -12,7 +12,7 @@
 \LoadClass{article}
 
 % Packages (pdfLaTeX-compatible defaults)
-\RequirePackage[margin=1in]{geometry}
+\RequirePackage[top=0.75in, bottom=0.75in, left=0.75in, right=0.75in]{geometry}
 \RequirePackage{titlesec}
 \RequirePackage{enumitem}
 \RequirePackage{hyperref}
@@ -34,12 +34,16 @@
 % No page numbers
 \pagestyle{empty}
 
+% Remove paragraph indentation
+\setlength{\parindent}{0pt}
+
 % Section formatting
 \titleformat{\section}{\large\bfseries}{}{0pt}{}[\titlerule]
 \titlespacing*{\section}{0pt}{1.2ex}{0.8ex}
 
-% Lists tighter
-\setlist{leftmargin=*, itemsep=0.25em, topsep=0.25em, parsep=0pt, partopsep=0pt}
+% Lists with no left margin and tight spacing
+\setlist[itemize]{leftmargin=1.5em, itemsep=0.15em, topsep=0.15em, parsep=0pt, partopsep=0pt}
+\setlist[itemize,2]{leftmargin=1.5em}
 
 % ---------
 % Stored fields for header
